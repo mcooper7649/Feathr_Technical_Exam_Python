@@ -1,0 +1,833 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/Contents 18 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 17 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+6 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://python-poetry.org/)
+>> /Border [ 0 0 0 ] /Rect [ 88.69291 292.6236 185.9629 304.6236 ] /Subtype /Link /Type /Annot
+>>
+endobj
+7 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://flask.palletsprojects.com/en/2.0.x/)
+>> /Border [ 0 0 0 ] /Rect [ 88.69291 274.6236 180.9529 286.6236 ] /Subtype /Link /Type /Annot
+>>
+endobj
+8 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.pytest.org/en/6.2.x/contents.html)
+>> /Border [ 0 0 0 ] /Rect [ 88.69291 256.6236 183.7429 268.6236 ] /Subtype /Link /Type /Annot
+>>
+endobj
+9 0 obj
+<<
+/Annots [ 6 0 R 7 0 R 8 0 R ] /Contents 19 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 17 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+10 0 obj
+<<
+/Outlines 12 0 R /PageLabels 20 0 R /PageMode /UseNone /Pages 17 0 R /Type /Catalog
+>>
+endobj
+11 0 obj
+<<
+/Author () /CreationDate (D:20210614102405+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20210614102405+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Feathr Jr. Engineer Work Assignment) /Trapped /False
+>>
+endobj
+12 0 obj
+<<
+/Count 4 /First 13 0 R /Last 16 0 R /Type /Outlines
+>>
+endobj
+13 0 obj
+<<
+/Dest [ 5 0 R /XYZ 62.69291 365.0236 0 ] /Next 14 0 R /Parent 12 0 R /Title (Getting Started)
+>>
+endobj
+14 0 obj
+<<
+/Dest [ 9 0 R /XYZ 62.69291 598.6236 0 ] /Next 15 0 R /Parent 12 0 R /Prev 13 0 R /Title (Requirements)
+>>
+endobj
+15 0 obj
+<<
+/Dest [ 9 0 R /XYZ 62.69291 415.6236 0 ] /Next 16 0 R /Parent 12 0 R /Prev 14 0 R /Title (Additional Notes)
+>>
+endobj
+16 0 obj
+<<
+/Dest [ 9 0 R /XYZ 62.69291 340.6236 0 ] /Parent 12 0 R /Prev 15 0 R /Title (Resources)
+>>
+endobj
+17 0 obj
+<<
+/Count 2 /Kids [ 5 0 R 9 0 R ] /Type /Pages
+>>
+endobj
+18 0 obj
+<<
+/Length 7014
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 56.01488 0 Td (Feathr Jr. Engineer Work Assignment) Tj T* -56.01488 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 707.0236 cm
+q
+BT 1 0 0 1 0 14 Tm .767633 Tw 12 TL /F1 10 Tf 0 0 0 rg (Welcome to your work assignment for the Junior Engineer role at Feathr! Your mission is to help Feathr) Tj T* 0 Tw (keep user data safe by adding a secure authentication flow to this web application called "whoami".) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 677.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .556179 Tw (What does whoami do? It's quite simple - when you log in, it tells you who you are! That part is basically) Tj T* 0 Tw (done. What's not done is the authentication.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 635.0236 cm
+q
+.960784 .960784 .862745 rg
+n 342.0987 24 36 12 re f*
+BT 1 0 0 1 0 26 Tm 2.242765 Tw 12 TL /F1 10 Tf 0 0 0 rg (The basic skeleton of the application is in place, review the files in the ) Tj /F3 10 Tf 0 0 0 rg (whoami) Tj /F1 10 Tf 0 0 0 rg ( directory to get an) Tj T* 0 Tw .040697 Tw (understanding of the application architecture. It's a python web server built with the Flask microframework,) Tj T* 0 Tw (which happens to be how we build most of our API servers here at Feathr.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 605.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .055697 Tw (You can implement your user authentication flow however you want, use whatever backing databases you) Tj T* 0 Tw (want, just make sure to follow security best-practices to the best of your ability.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 575.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .176457 Tw (Modify and add files to this directory as needed, but maintain the existing routes and their accepted HTTP) Tj T* 0 Tw (methods as defined.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 557.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (As you work on this project, keep in mind the Feathr's core values, PACTS:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 551.0236 cm
+Q
+q
+1 0 0 1 62.69291 551.0236 cm
+Q
+q
+1 0 0 1 62.69291 539.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 26 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Practicality - Prefer incremental improvement over delayed perfection) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 533.0236 cm
+Q
+q
+1 0 0 1 62.69291 521.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 26 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Ambition - Learn and do what is necessary to solve real challenges) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 515.0236 cm
+Q
+q
+1 0 0 1 62.69291 503.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 26 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Clarity - Make sure your code is understandable and maintainable) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 497.0236 cm
+Q
+q
+1 0 0 1 62.69291 485.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 26 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Trust - Be sincere and trust others to do the same) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 479.0236 cm
+Q
+q
+1 0 0 1 62.69291 467.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 26 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Service - Ask more from yourself than from others) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 467.0236 cm
+Q
+q
+1 0 0 1 62.69291 437.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.02881 Tw (Try to exemplify our PACTS in the design and implementation decisions you make as you work on this) Tj T* 0 Tw (project.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 407.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 2.75248 Tw (Use whatever resources, tutorials, documentation, whatever you need, to complete the project. We) Tj T* 0 Tw (google/stackoverflow stuff when we get stuck too. :\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 377.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .516179 Tw (If you can't finish the whole assignment in time, that's fine! We want to see how far you get and how you) Tj T* 0 Tw (did it. It's about the process, not the destination.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 344.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Getting Started) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 290.0236 cm
+q
+.960784 .960784 .862745 rg
+n 45.21843 36 36 12 re f*
+.960784 .960784 .862745 rg
+n 183.7145 36 36 12 re f*
+.960784 .960784 .862745 rg
+n 285.7061 24 36 12 re f*
+BT 1 0 0 1 0 38 Tm 1.489213 Tw 12 TL /F1 10 Tf 0 0 0 rg (We used ) Tj /F3 10 Tf 0 0 0 rg (poetry) Tj /F1 10 Tf 0 0 0 rg ( to setup this project. ) Tj /F3 10 Tf 0 0 0 rg (poetry) Tj /F1 10 Tf 0 0 0 rg ( provides packaging and dependency management for) Tj T* 0 Tw 2.00061 Tw (python projects. You can find documentation for how to use ) Tj /F3 10 Tf 0 0 0 rg (poetry) Tj /F1 10 Tf 0 0 0 rg ( at the project website \(see the) Tj T* 0 Tw 2.051654 Tw (Resources section below\). You will need to install poetry with pip first so you can use it to manage) Tj T* 0 Tw (dependencies for this project.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 256.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 24 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (pip install poetry) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 236.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Then you'll need to install the project dependencies. In this directory, run) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 203.6236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 24 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (poetry install) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 171.6236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.603555 Tw (When adding dependencies, running the development server or tests, make sure you have the virtual) Tj T* 0 Tw (environment active. To activate the virtual environment for the project, run) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 138.4236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 24 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (poetry shell) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 106.4236 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 30 12 re f*
+BT 1 0 0 1 0 14 Tm .571235 Tw 12 TL /F1 10 Tf 0 0 0 rg (Once the virtual environment is active, you will have access to the locally installed dependencies like the) Tj T* 0 Tw /F3 10 Tf 0 0 0 rg (flask) Tj /F1 10 Tf 0 0 0 rg ( CLI, in your shell.) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+19 0 obj
+<<
+/Length 6955
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+.960784 .960784 .862745 rg
+n 27.8 0 36 12 re f*
+BT 1 0 0 1 0 14 Tm .274651 Tw 12 TL /F1 10 Tf 0 0 0 rg (With the dependencies installed and your virtual environment active, you can run the server by navigating) Tj T* 0 Tw (to the ) Tj /F3 10 Tf 0 0 0 rg (whoami) Tj /F1 10 Tf 0 0 0 rg ( directory and running) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 707.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 24 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (flask run) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 687.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (To run tests, just run) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 654.6236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 24 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (pytest) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 610.6236 cm
+q
+.960784 .960784 .862745 rg
+n 274.2819 24 30 12 re f*
+.960784 .960784 .862745 rg
+n 429.4013 24 30 12 re f*
+.960784 .960784 .862745 rg
+n 17.51198 12 30 12 re f*
+BT 1 0 0 1 0 26 Tm -0.071512 Tw 12 TL /F1 10 Tf 0 0 0 rg (By default, this will find and run each function that begins with ) Tj /F3 10 Tf 0 0 0 rg (test_) Tj /F1 10 Tf 0 0 0 rg ( in each file that begins with ) Tj /F3 10 Tf 0 0 0 rg (test_) Tj /F1 10 Tf 0 0 0 rg ( in) Tj T* 0 Tw .831984 Tw (the ) Tj /F3 10 Tf 0 0 0 rg (tests) Tj /F1 10 Tf 0 0 0 rg ( directory. Consult the pytest documentation \(see the link in the Resources section below\) for) Tj T* 0 Tw (more details and options.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 577.6236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Requirements) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 565.6236 cm
+Q
+q
+1 0 0 1 62.69291 565.6236 cm
+Q
+q
+1 0 0 1 62.69291 553.6236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 26 -3 cm
+q
+.960784 .960784 .862745 rg
+n 327.39 0 42 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (A new user should be able to sign up with username and password at the ) Tj /F3 10 Tf 0 0 0 rg (/signup) Tj /F1 10 Tf 0 0 0 rg ( page.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 547.6236 cm
+Q
+q
+1 0 0 1 62.69291 535.6236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 26 -3 cm
+q
+.960784 .960784 .862745 rg
+n 369.08 0 36 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (After signing up, a user should be able to login with username and password at the ) Tj /F3 10 Tf 0 0 0 rg (/login) Tj /F1 10 Tf 0 0 0 rg ( page.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 529.6236 cm
+Q
+q
+1 0 0 1 62.69291 517.6236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 26 -3 cm
+q
+.960784 .960784 .862745 rg
+n 196.23 0 18 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Once logged in, the user should be taken to ) Tj /F3 10 Tf 0 0 0 rg (/me) Tj /F1 10 Tf 0 0 0 rg ( where they can see their username on the page.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 511.6236 cm
+Q
+q
+1 0 0 1 62.69291 499.6236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 26 -3 cm
+q
+.960784 .960784 .862745 rg
+n 61.14 0 42 12 re f*
+.960784 .960784 .862745 rg
+n 311.04 0 36 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Navigating to ) Tj /F3 10 Tf 0 0 0 rg (/logout) Tj /F1 10 Tf 0 0 0 rg ( should log the user out and take them back to ) Tj /F3 10 Tf 0 0 0 rg (/login) Tj /F1 10 Tf 0 0 0 rg (.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 493.6236 cm
+Q
+q
+1 0 0 1 62.69291 481.6236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 26 -3 cm
+q
+.960784 .960784 .862745 rg
+n 158.41 0 18 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Users should not be able to access ) Tj /F3 10 Tf 0 0 0 rg (/me) Tj /F1 10 Tf 0 0 0 rg ( without logging in.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 475.6236 cm
+Q
+q
+1 0 0 1 62.69291 463.6236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 26 -3 cm
+q
+.960784 .960784 .862745 rg
+n 254.02 0 120 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (A test for each aforementioned route should be written in ) Tj /F3 10 Tf 0 0 0 rg (tests/test_whoami.py) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 457.6236 cm
+Q
+q
+1 0 0 1 62.69291 445.6236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 26 -3 cm
+q
+.960784 .960784 .862745 rg
+n 323.21 0 54 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Fill in the "Implementation" and "Limitations/Future Work" sections of the ) Tj /F3 10 Tf 0 0 0 rg (NOTES.rst) Tj /F1 10 Tf 0 0 0 rg ( file) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 445.6236 cm
+Q
+q
+1 0 0 1 62.69291 427.6236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Submit the finished project as a zip archive.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 394.6236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Additional Notes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 352.6236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL .030542 Tw (In order to store user profiles and credentials, you'll need to add some sort of persistence layer to whoami.) Tj T* 0 Tw 1.11061 Tw (You can do this however you choose: with a backing database like MongoDB or MySQL, with python's) Tj T* 0 Tw (built in sqlite3 support, or even by just writing to a file.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 319.6236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Resources) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 307.6236 cm
+Q
+q
+1 0 0 1 62.69291 307.6236 cm
+Q
+q
+1 0 0 1 62.69291 295.6236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 26 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (Poetry documentation) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 289.6236 cm
+Q
+q
+1 0 0 1 62.69291 277.6236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 26 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (Flask documentation) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 271.6236 cm
+Q
+q
+1 0 0 1 62.69291 259.6236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 26 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (pytest documentation) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 259.6236 cm
+Q
+ 
+endstream
+endobj
+20 0 obj
+<<
+/Nums [ 0 21 0 R 1 22 0 R ]
+>>
+endobj
+21 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+22 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+xref
+0 23
+0000000000 65535 f 
+0000000073 00000 n 
+0000000124 00000 n 
+0000000231 00000 n 
+0000000343 00000 n 
+0000000448 00000 n 
+0000000653 00000 n 
+0000000831 00000 n 
+0000001026 00000 n 
+0000001224 00000 n 
+0000001459 00000 n 
+0000001565 00000 n 
+0000001858 00000 n 
+0000001932 00000 n 
+0000002048 00000 n 
+0000002174 00000 n 
+0000002304 00000 n 
+0000002414 00000 n 
+0000002480 00000 n 
+0000009546 00000 n 
+0000016553 00000 n 
+0000016603 00000 n 
+0000016637 00000 n 
+trailer
+<<
+/ID 
+[<9687656313555acde2ee38a862991fdd><9687656313555acde2ee38a862991fdd>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 11 0 R
+/Root 10 0 R
+/Size 23
+>>
+startxref
+16671
+%%EOF
