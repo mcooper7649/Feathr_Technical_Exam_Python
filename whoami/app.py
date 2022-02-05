@@ -2,8 +2,6 @@ from flask import Flask, g, redirect, render_template, request, url_for
 
 
 app = Flask(__name__)
-
-
 @app.route('/')
 @app.route('/login', methods=['GET', 'POST'])
 def login():
