@@ -1,7 +1,7 @@
-$("form[name=signup_form").submit(function (e){
-    var $form = $(this);
-    var $error = $form.find(".error");
-    var data = $form.serialize();
+$("form[name=signup_form]").submit(function (e){
+    let $form = $(this);
+    let $error = $form.find(".error");
+    let data = $form.serialize();
 
     $.ajax({
         url: "/signup/",

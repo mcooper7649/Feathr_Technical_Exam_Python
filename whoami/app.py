@@ -1,6 +1,26 @@
-from flask import Flask,  redirect, render_template, request, url_for
-from whoami.user.models import User
+from flask import Flask, g, redirect, jsonify, render_template, request, url_for
+import uuid
+from passlib.hash import bcrypt
+
 app = Flask(__name__)
+
+
+class User:
+    @staticmethod
+    def signup():
+        print(request.form)
+
+        # Create the user object
+        user = {
+            "_id": uuid.uuid4().hex,
+            "username": request.form.get('username'),
+            "password": request.form.get('password')
+        }
+
+        # Encrypt the password
+        user['password'] = bcrypt.hash(user['password'])
+        print(user['password'])
+        return jsonify(user), 200
 
 
 @app.route('/')
