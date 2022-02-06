@@ -4,5 +4,6 @@
 
 {% block content %}
 <h1>You are ...</h1>
-<p>{{ user }}!</p>
+<h1>{{ session['user'].username}}!</h1>
+    <h4> YOUR UUID: {{ session['user']._id}}</h4>
 {% endblock %}

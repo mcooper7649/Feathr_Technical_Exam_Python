@@ -1,10 +1,12 @@
 import pymongo
-from flask import Flask, g, redirect, jsonify, render_template, request, url_for
+from flask import Flask, g, redirect, session, jsonify, render_template, request, url_for
 import uuid
+from functools import wraps
 from passlib.hash import bcrypt
 
 
 app = Flask(__name__)
+app.secret_key = b'\xcc^\x91\xea\x17-\xd0W\x03\xa7\xf8J0\xac8\xc5'
 
 # Database
 client = pymongo.MongoClient('127.0.0.1', 27017)
@@ -15,18 +17,26 @@ print(db)
 
 
 class User:
+
     @staticmethod
-    def signup():
+    def start_session(self, user):
+        del user['password']
+        session['logged_in'] = True
+        session['user'] = user
+        return redirect('/me/')
+
+    @staticmethod
+    def signup(self):
         print(request.form)
 
-        # Create the user object
+# Create the user object
         user = {
             "_id": uuid.uuid4().hex,
             "username": request.form.get('username'),
             "password": request.form.get('password')
         }
 
-        # Encrypt the password
+# Encrypt the password
         user['password'] = bcrypt.hash(user['password'])
         print(user)
 
@@ -35,13 +45,26 @@ class User:
             return jsonify({"error": "Username already in use"}), 400
         # Otherwise, try to insert user into DB
         if db.users.insert_one(user):
-            return redirect('/me/')
+            return self.start_session(self, user)
+        return jsonify({"error": "Signup failed"}), 400
+# Generic Error if everything else fails
 
-        # Generic Error if everything else fails
+    @staticmethod
+    def logout(self):
+        session.clear()
+        return redirect('/')
 
-        return jsonify({"error": "Signup failed"})
 
+# Decorators
+def login_required(f):
+        @wraps(f)
+        def wrap(*args, **kwargs):
+            if 'logged_in' in session:
+                return f(*args, **kwargs)
+            else:
+                return redirect('/')
 
+        return wrap
 
 # Routes
 
@@ -62,7 +85,7 @@ def login():
 def signup():
     if request.method == 'POST':
         user = User()
-        return user.signup()
+        return user.signup(user)
     # if request.method == 'POST':
     #     # process signup form
     #     # create new user
@@ -73,6 +96,7 @@ def signup():
 
 
 @app.route('/me/', methods=['GET'])
+@login_required
 def me():
     # if the user is not logged in, redirect to /login
     # if not g.user:
@@ -82,6 +106,8 @@ def me():
 
 @app.route('/logout/', methods=['GET'])
 def logout():
+    user = User
+    user.logout(User)
     # log user out
     # redirect to /login
     return redirect(url_for('login'))
