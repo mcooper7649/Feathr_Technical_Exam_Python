@@ -1,7 +1,6 @@
-from flask import Flask, g, redirect, render_template, request, url_for
-
+from flask import Flask,  redirect, render_template, request, url_for
+from whoami.user.models import User
 app = Flask(__name__)
-
 
 
 @app.route('/')
@@ -16,22 +15,25 @@ def login():
     return render_template('login.html')
 
 
-@app.route('/signup/', methods=['GET', 'POST'])
+@app.route('/signup/', methods=['POST', 'GET'])
 def signup():
     if request.method == 'POST':
-        # process signup form
-        # create new user
-        # redirect to /login
-        pass
-    # if user is logged in already, redirect to /me
-    return render_template('signup.html')
+        user = User()
+        return user.signup()
+    # if request.method == 'POST':
+    #     # process signup form
+    #     # create new user
+    #     # redirect to /login
+    if request.method == 'GET':
+        return render_template('signup.html')
+# if user is logged in already, redirect to /me
 
 
 @app.route('/me/', methods=['GET'])
 def me():
     # if the user is not logged in, redirect to /login
-    if not g.user:
-        return redirect('login')
+    # if not g.user:
+    #     return redirect('login')
     return render_template('me.html')
 
 
