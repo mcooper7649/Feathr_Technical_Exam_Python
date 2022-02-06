@@ -7,6 +7,8 @@ authors = ["Thomas R Storey <thomas@feathr.co>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 Flask = "^2.0.1"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+pymongo = "^4.0.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

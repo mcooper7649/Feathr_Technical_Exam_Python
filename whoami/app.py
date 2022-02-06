@@ -1,8 +1,17 @@
+import pymongo
 from flask import Flask, g, redirect, jsonify, render_template, request, url_for
 import uuid
 from passlib.hash import bcrypt
 
+
 app = Flask(__name__)
+
+# Database
+client = pymongo.MongoClient('127.0.0.1', 27017)
+db = client['userDB']
+print(db)
+
+# User Model
 
 
 class User:
@@ -19,8 +28,22 @@ class User:
 
         # Encrypt the password
         user['password'] = bcrypt.hash(user['password'])
-        print(user['password'])
-        return jsonify(user), 200
+        print(user)
+
+        # Check for existing username
+        if db.users.find_one({"username": user['username'] }):
+            return jsonify({"error": "Username already in use"}), 400
+        # Otherwise, try to insert user into DB
+        if db.users.insert_one(user):
+            return redirect('/me/')
+
+        # Generic Error if everything else fails
+
+        return jsonify({"error": "Signup failed"})
+
+
+
+# Routes
 
 
 @app.route('/')
