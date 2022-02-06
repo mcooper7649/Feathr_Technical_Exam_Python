@@ -3,7 +3,21 @@
 {% block title %}Who am I?{% endblock %}
 
 {% block content %}
-<h1>You are ...</h1>
-<h1>{{ session['user'].username}}!</h1>
-    <h4> YOUR UUID: {{ session['user']._id}}</h4>
+
+<h1 class="center">Dashboard</h1>
+
+
+    <div>
+    <h2 class="center">You are currently logged in.</h2>
+    </div>
+    <hr>
+    <div class="">
+            <h2 class="center">Your Info</h2>
+    <h3><strong>Name: </strong>{{ session['user'].username}}!</h3>
+    <p> <strong>ID:</strong> {{ session['user']._id}}</p>
+
+    </div>
+        <div>
+    <a href="/logout" class="btn btn--secondary">Sign Out</a>
+    </div>
 {% endblock %}
