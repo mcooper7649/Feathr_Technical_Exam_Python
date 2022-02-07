@@ -29,9 +29,10 @@ body {
   font-family: sans-serif;
   font-size: 18px;
   line-height: 28px;
-  color: var(--black);
-  background: var(--grey-light);
+  color: var(--primary-dark);
+  background: var(--almost-black);
 }
+
 
 /* Typography */
 .center {
@@ -191,12 +192,36 @@ input[type=submit] {
   padding: 10px;
 }
 
-.navbar-brand {
+.navbar {
+  padding: 0.5rem 2rem;
+}
+
+.navbar-toggler:hover {
+  background: var(--almost-black);
+}
+
+button:focus {
+  outline: none;
+}
+
+
+.title {
+  font-family: 'Architects Daughter', cursive;
   font-size: 40px
 }
 
-.title {
-font-family: 'Architects Daughter', cursive;
+.title:hover {
+  color: var(--primary-dark) !important;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
 }
 
 
