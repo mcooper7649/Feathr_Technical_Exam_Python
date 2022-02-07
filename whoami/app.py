@@ -62,7 +62,7 @@ class User:
             "username": request.form.get('username')
         })
 
-        if user:
+        if user and bcrypt.verify(request.form.get('password'), user['password']):
             return self.start_session(self, user)
 
         return jsonify({"error": "Invalid login credentials"}), 401

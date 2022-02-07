@@ -1,5 +1,10 @@
-from whoami import __version__
+from flask import Flask
 
 
-def test_version():
-    assert __version__ == '0.1.0'
+def test_base_route():
+    app = Flask(__name__)
+    client = app.test_client()
+    url = '/'
+
+    response = client.get(url)
+    assert response.status_code == 200
