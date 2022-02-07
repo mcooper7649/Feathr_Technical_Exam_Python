@@ -3,14 +3,17 @@ from flask import Flask, g, redirect, session, jsonify, render_template, request
 import uuid
 from functools import wraps
 from passlib.hash import bcrypt
+from dotenv import load_dotenv
+load_dotenv()
+import os
 
 
 app = Flask(__name__)
-app.secret_key = b'\xcc^\x91\xea\x17-\xd0W\x03\xa7\xf8J0\xac8\xc5'
+app.secret_key = os.getenv("SECRET_KEY")
 
 # Database
-conn_credentials = 'mongodb+srv://admin-feathr:0Zo7SUPiygFAODfB'
-conn_url = "@cluster0.ewevp.mongodb.net/myFirstDatabase?"
+conn_credentials = os.getenv("CREDS")
+conn_url = os.getenv("URL")
 conn_params = 'retryWrites=true&w=majority&tlsAllowInvalidCertificates=true&serverSelectionTimeoutMS=5000'
 
 client = pymongo.MongoClient(conn_credentials + conn_url + conn_params)
