@@ -54,6 +54,19 @@ class User:
         session.clear()
         return redirect('/')
 
+# Login Logic
+
+    @staticmethod
+    def login(self):
+        user = db.users.find_one({
+            "username": request.form.get('username')
+        })
+
+        if user:
+            return self.start_session(self, user)
+
+        return jsonify({"error": "Invalid login credentials"}), 401
+
 
 # Decorators
 def login_required(f):
@@ -73,12 +86,16 @@ def login_required(f):
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
+        user = User()
+        return user.login(user)
+
         # process login form
         # redirect to /me if authentication successful
         # redirect back to /login if not
         pass
     # if user is logged in already, redirect to /me
-    return render_template('login.html')
+    if request.method == 'GET':
+        return render_template('login.html')
 
 
 @app.route('/signup/', methods=['POST', 'GET'])
