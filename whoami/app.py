@@ -9,8 +9,13 @@ app = Flask(__name__)
 app.secret_key = b'\xcc^\x91\xea\x17-\xd0W\x03\xa7\xf8J0\xac8\xc5'
 
 # Database
-client = pymongo.MongoClient('127.0.0.1', 27017)
-db = client['userDB']
+conn_credentials = 'mongodb+srv://admin-feathr:0Zo7SUPiygFAODfB'
+conn_url = "@cluster0.ewevp.mongodb.net/myFirstDatabase?"
+conn_params = 'retryWrites=true&w=majority&tlsAllowInvalidCertificates=true&serverSelectionTimeoutMS=5000'
+
+client = pymongo.MongoClient(conn_credentials + conn_url + conn_params)
+print(client.server_info())
+db = client['usersDB']
 print(db)
 
 # User Model
