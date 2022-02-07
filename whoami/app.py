@@ -11,7 +11,7 @@ import os
 app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY")
 
-# Database
+# Database Connection
 conn_credentials = os.getenv("CREDS")
 conn_url = os.getenv("URL")
 conn_params = 'retryWrites=true&w=majority&tlsAllowInvalidCertificates=true&serverSelectionTimeoutMS=5000'
