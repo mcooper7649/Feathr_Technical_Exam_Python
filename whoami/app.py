@@ -1,17 +1,15 @@
 import pymongo
+import os
 from flask import Flask, g, redirect, session, jsonify, render_template, request, url_for
-import uuid
 from functools import wraps
 from passlib.hash import bcrypt
 from dotenv import load_dotenv
 load_dotenv()
-import os
-
 
 app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY")
 
-# Database Connection
+# Database
 conn_credentials = os.getenv("CREDS")
 conn_url = os.getenv("URL")
 conn_params = 'retryWrites=true&w=majority&tlsAllowInvalidCertificates=true&serverSelectionTimeoutMS=5000'
