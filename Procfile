@@ -1,1 +1,1 @@
- web: --chdir ./whoami flask run
+web: waitress-serve --port $PORT --call src.app:app
