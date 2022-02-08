@@ -1,1 +1,1 @@
-web: gunicorn ./whoami run
+web: poetry ./whoami/run
