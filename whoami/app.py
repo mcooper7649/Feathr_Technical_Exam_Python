@@ -1,6 +1,5 @@
 import pymongo
 import os
-import gunicorn
 from flask import Flask, redirect, session, jsonify, render_template, request, url_for
 from functools import wraps
 from passlib.hash import bcrypt
