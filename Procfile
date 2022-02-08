@@ -1,1 +1,1 @@
-web: poetry --chdir ./whoami run
+web: gunicorn whoami.app:app
