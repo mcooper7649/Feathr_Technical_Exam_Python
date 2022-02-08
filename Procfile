@@ -1,1 +1,1 @@
-web: --chdir ./whoami FLASK_APP=app.py FLASK_ENV=development flask run
+web: gunicorn whoami.app:app
