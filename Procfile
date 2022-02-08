@@ -1,1 +1,2 @@
-web: cd ./whoami && gunicorn app:app
+web: cd ./whoami && flask run
+
