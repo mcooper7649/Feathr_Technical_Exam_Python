@@ -1,1 +1,1 @@
-web: run
+web: --chdir ./whoami run
