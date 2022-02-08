@@ -1,6 +1,6 @@
 import pymongo
 import os
-from flask import Flask, g, redirect, session, jsonify, render_template, request, url_for
+from flask import Flask, redirect, session, jsonify, render_template, request, url_for
 from functools import wraps
 from passlib.hash import bcrypt
 from dotenv import load_dotenv
