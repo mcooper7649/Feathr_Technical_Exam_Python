@@ -1,1 +1,1 @@
-web: gunicorn ./whoami app:app
+web: gunicorn ./whoami app:app run
