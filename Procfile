@@ -1,1 +1,1 @@
-web: gunicorn whoami.app:app
+gunicorn whoami.app:app
