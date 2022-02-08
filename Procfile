@@ -1,1 +1,1 @@
-web: gunicorn --chdir ./whoami app:app
+web: gunicorn ./whoami app:app
