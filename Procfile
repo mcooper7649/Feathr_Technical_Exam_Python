@@ -1,1 +1,1 @@
- web: --chdir ./whoami flask run
+ web: gunicorn --chdir ./whoami flask run
