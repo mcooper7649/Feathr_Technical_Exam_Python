@@ -1,1 +1,1 @@
-web: sh -c 'cd ./whoami/ && flask run'
+web: cd ./whoami/ && flask run
