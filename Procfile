@@ -1,1 +1,1 @@
-gunicorn whoami.app:app
+web: sh -c 'cd ./whoami/ && flask run'
