@@ -1,1 +1,1 @@
-web: poetry --chdir /whoami run
+web: poetry --chdir ./whoami run
