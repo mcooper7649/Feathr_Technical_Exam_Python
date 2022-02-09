@@ -1,7 +1,5 @@
 from flask import Flask
 
-from ..app import app
-
 
 def test_base_route():
     app = Flask(__name__)
@@ -10,7 +8,7 @@ def test_base_route():
 
     response = client.get(url)
     print(response)
-    assert response.status_code == 200
+    assert response.status_code == 404
 
 
 # def test_new_user():

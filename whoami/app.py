@@ -1,7 +1,7 @@
 import pymongo
 import os
 import uuid
-from flask import Flask, redirect, session, jsonify, render_template, request, url_for
+from flask import Flask, redirect, session, jsonify, render_template, request
 from functools import wraps
 from passlib.hash import bcrypt
 from dotenv import load_dotenv
@@ -35,16 +35,15 @@ class User:
 
     @staticmethod
     def signup(self):
-        print(request.form)
 
-# Create the user object
+        # Create the user object
         user = {
             "_id": uuid.uuid4().hex,
             "username": request.form.get('username'),
             "password": request.form.get('password')
         }
 
-# Encrypt the password
+        # Encrypt the password
         user['password'] = bcrypt.hash(user['password'])
 
         # Check for existing username
@@ -62,7 +61,7 @@ class User:
         session.clear()
         return redirect('/')
 
-# Login Logic
+        # Login Logic
 
     @staticmethod
     def login(self):
@@ -77,14 +76,14 @@ class User:
 
 # Decorators
 def login_required(f):
-        @wraps(f)
-        def wrap(*args, **kwargs):
-            if 'logged_in' in session:
-                return f(*args, **kwargs)
-            else:
-                return redirect('/')
+    @wraps(f)
+    def wrap(*args, **kwargs):
+        if 'logged_in' in session:
+            return f(*args, **kwargs)
+        else:
+            return redirect('/')
 
-        return wrap
+    return wrap
 
 # Routes
 
@@ -92,8 +91,7 @@ def login_required(f):
 @app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
-        user = User()
-        return user.login(user)
+        return User().login(self=User)
 
     if request.method == 'GET':
         return render_template('login.html'), 200
@@ -102,8 +100,7 @@ def home():
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        user = User()
-        return user.login(user)
+        return User().login(self=User)
 
         # process login form
         # redirect to /me if authentication successful (via @login_required)
@@ -117,8 +114,7 @@ def login():
 @app.route('/signup/', methods=['POST', 'GET'])
 def signup():
     if request.method == 'POST':
-        user = User
-        return user.signup(User)
+        return User().signup(self=User)
     # if request.method == 'POST':
     #     # process signup form
     #     # create new user
@@ -139,8 +135,4 @@ def me():
 
 @app.route('/logout/', methods=['GET'])
 def logout():
-    user = User
-    user.logout(User)
-    # log user out
-    # redirect to /login
-    return render_template('login.html'), 200
+    return User().logout(self=User)
