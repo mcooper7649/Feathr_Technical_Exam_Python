@@ -1,2 +1,2 @@
-web: gunicorn --chdir ./whoami app:app
+web: gunicorn wsgi:app
 
